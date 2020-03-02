@@ -1,18 +1,19 @@
     * {
     margin: 0;
-    padding: 0;
+    padding: 0%;
 }
 
     :root {
     --main-color: #1a643f;
     --table-background-color: #f3f1f1;
     --main-text-color: #ffffff;
-    --secondary-text-color: #aaa;
+    --second-text-color: #aaa;
+    --third-text-color: #14ad80;
     --main-font: 'Montserrat'
 }
 
 
-header {
+header { 
     position: relative;
     padding: 10px 0;
     background-color: var(--main-color);
@@ -42,13 +43,27 @@ table {
     font-family: var(--main-font);
     margin: 30px auto;
     padding: 20px 30px;
+    font-size: 1.3em;
     text-align: center;
     background-color: var(--table-background-color)
 }
 
-#legendas th {
-    color:var(--secondary-text-color);
+#legendas th:nth-child(n) {
+    color:var(--second-text-color);
     padding: 15px 5px;
+}
+
+tr:nth-child(n+2) td:nth-child(1){
+    color: var(--third-text-color);
+    font-weight: 700;
+}
+
+tr:nth-child(n+2) td:nth-child(2){
+    text-align: left;
+}
+
+tr:nth-child(n+2) td:nth-child(3){
+    color: var(--second-text-color)
 }
 
 tr:nth-child(n+1) td {
@@ -62,7 +77,6 @@ footer{
 
 a {
     text-decoration: none;
-    color: var(--main-text-color)
 }
 
 p {
@@ -70,4 +84,12 @@ p {
     font-size: 0.8em;
     text-align: center;
     margin: 20px 0;
+}
+
+#linkedin{
+    color: var(--third-text-color);
+}
+
+#linkedin:hover{
+    color: var(--main-text-color)
 }
