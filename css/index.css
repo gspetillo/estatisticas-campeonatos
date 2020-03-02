@@ -1,0 +1,73 @@
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+    :root {
+    --main-color: #1a643f;
+    --table-background-color: #f3f1f1;
+    --main-text-color: #ffffff;
+    --secondary-text-color: #aaa;
+    --main-font: 'Montserrat'
+}
+
+
+header {
+    position: relative;
+    padding: 10px 0;
+    background-color: var(--main-color);
+}
+
+img {
+    display: inline-block;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 0;
+    text-align: center;
+    font-size: 2em;
+    font-family: var(--main-font);
+    color:var(--main-text-color);
+}
+
+table {
+    font-family: var(--main-font);
+    margin: 30px auto;
+    padding: 20px 30px;
+    text-align: center;
+    background-color: var(--table-background-color)
+}
+
+#legendas th {
+    color:var(--secondary-text-color);
+    padding: 15px 5px;
+}
+
+tr:nth-child(n+1) td {
+    padding: 5px 10px;
+}
+
+footer{
+    padding: 3px 0;
+    background-color: var(--main-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-text-color)
+}
+
+p {
+    font-family: var(--main-font);
+    font-size: 0.8em;
+    text-align: center;
+    margin: 20px 0;
+}
